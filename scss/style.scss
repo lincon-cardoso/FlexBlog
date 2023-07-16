@@ -1,22 +1,127 @@
-@import 'reset';
+@import "reset";
 
-//super info 
+//super info
 
 .superinfo-bg {
-    background-color: #122ab2;
+  background-color: #122ab2;
+  color: white;
+  a {
     color: white;
-    a{
-        color: white;
+  }
+  .superinfo {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+  }
+  p,
+  a {
+    margin: 0 10px 10px 10px;
+  }
+}
+
+//menu
+
+.menu-bg {
+  background: #2c70ff;
+  .menu {
+    display: flex;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 15px 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      color: white;
     }
-    .superinfo{
-        max-width: 960px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        padding-top: 10px;
+
+    .menu-logo a {
+      font-size: 2.25em;
+      font-weight: bold;
+      margin: 0 10px;
     }
-    p, a {
-        margin: 0 10px 10px 10px; 
+  }
+
+  .menu-nav {
+    ul {
+      display: flex;
+      flex-wrap: wrap;
     }
+    a {
+      font-size: 1.25em;
+      padding: 10px;
+      &:hover {
+        color: #122ab2;
+      }
+    }
+  }
+}
+
+/* introdução*/
+
+.introducao {
+  font-size: 3em;
+  line-height: 1;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+}
+
+//sobre
+
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  border-top: 2px solid #2c70ff;
+  border-bottom: 2px solid #2c70ff;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 60px 10px;
+  .sobre-info {
+    flex: 2 1 300px;
+    margin: 0 10px;
+    h1 {
+      font-size: 3em;
+      margin-bottom: 0.5em;
+    }
+    p {
+      font-size: 1.25em;
+      line-height: 1.4;
+      margin-bottom: 1em;
+      color: #7c7c7c;
+    }
+  }
+  .sobre-img {
+    flex: 1 1 160px;
+    margin: 0 10px;
+  }
+}
+
+/*Produto*/
+
+.produtos {
+  max-width: 960px;
+  margin: 60px auto;
+  h1 {
+    font-size: 3em;
+    margin: 0 10px 10px 60px;
+  }
+
+  .produtos-container {
+    display: flex;
+    flex-wrap: wrap;
+    .produtos-item {
+      flex: 1 1 175px;
+      margin: 10px;
+      h2{
+        font-size: 3em;
+        color: #a4a4a4;
+        background: #f7f7f7;
+        padding: 60px 20px;
+      }
+    }
+  }
 }
